@@ -8,6 +8,7 @@ if(empty($plusIndex) AND empty($minusIndex)) {
     $vysledek = $vysledek + (int)$string;
     echo $vysledek;
 }
+else{
 if($plusIndex > $minusIndex)
     {
     $delkaposlednicasti = strlen($string) - $plusIndex;
@@ -26,5 +27,6 @@ else
     $string = substr($string, 0,-$secondpart);
     solveplusminus($string);
     }
+}
 }
 solveplusminus($string);
